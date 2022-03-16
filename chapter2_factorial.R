@@ -72,3 +72,27 @@ permute <- function(x) {
 }
 
 permute(10)
+
+perm <- function(n, r) {
+  return(fact(n) / fact(n-r))
+}
+
+perm(5, 4 )
+perm(5, 2)
+
+# combination
+
+x <- c(1, 2, 3, 4, 5)
+count <- 0
+for (i in 1:4) {
+  for(j in (i+1):5) {
+    print(c(i, j))
+    count <- count + 1
+  }
+}
+print(count)
+comb <- function(n, r) {
+  return(fact(n) / fact(n-r) / fact(r))
+}
+
+comb(45, 6)
