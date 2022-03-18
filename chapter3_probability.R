@@ -21,5 +21,3 @@ for(i in 1:n_simulation){
 }
 
 n_success / n_simulation
-
-# issue
