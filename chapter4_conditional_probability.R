@@ -71,3 +71,12 @@ print(n_false_positive)
 
 # 위양성률
 print(n_false_positive / n_total_positive)
+
+# simulation birthday
+
+n <- 30
+res <- 1
+for(i in 1:(n-1)) {
+  res <- res * (365 - i) / 365
+}
+res
